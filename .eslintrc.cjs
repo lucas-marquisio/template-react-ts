@@ -15,4 +15,13 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+      extends: 'standard-with-typescript',
+      rules: {
+        "@typescript-eslint/explicit-function-return-type": "off"
+      },
+    }
+  ],
 }
